@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract62.MainPage">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles.css"/>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Label Text="Информация по тортам - кулинария" FontSize="Medium" HorizontalOptions="Center" StyleId="labelmedium1" FontAttributes="Bold" Margin="0,20,0,0"/>
+        <Label Text="(Заказ и покупка тортов)" FontSize="Medium" HorizontalOptions="Center" StyleId="labelmedium1" FontAttributes="Bold" Margin="0,-7,0,0"/>
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="picture" Source="doska_obreznay.jpg" Margin="5,-5,0,0" WidthRequest="100" HeightRequest="100"/>
+            <Label x:Name="name" StyleId="labelmedium" Margin="5,-5,0,0"/>
+            <Label x:Name="category" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="unit"  StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="fats" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="belky" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="yglevody" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="vitamins" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="price" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="provider" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="count" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Label x:Name="recipe" StyleId="labelsmall" Margin="5,0,10,0"/>
+            <Entry x:Name="entry" StyleId="entry" Placeholder="Сколько кг. будет торт" HorizontalOptions="Start" Margin="5,0,50,0"/>
+            <Button x:Name="next" StyleId="button" Text="Расчет стоимости торта" Margin="5,-10,5,0" Clicked="next_Clicked" />
+            <Button x:Name="back" StyleId="button" Text="Возврат на главную страницу" Margin="5,0,5,0" Clicked="back_Clicked" />
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

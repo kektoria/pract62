@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract62.Calculate">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles.css"/>
+    </ContentPage.Resources>
+
+    <StackLayout Orientation="Vertical">
+
+        <Label Text="Расчет стоимости" StyleId="labellarge" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,50,0,0"/>
+        <Label x:Name="metr" Text="Килограмм: " StyleId="labelmedium" Margin="15,100,0,0"/>
+        <Label x:Name="price" Text="Цена за 1 кг.: " StyleId="labelmedium" Margin="15,15,0,0"/>
+
+        <Label Text="Дополнительно" HorizontalOptions="Center" StyleId="labellarge" Margin="0,20,0,0"/>
+        <Switch x:Name="switch1" IsToggled="False" HorizontalOptions="Center" Margin="-320,50,0,0" OnColor="LightBlue" ThumbColor="#25d4e6" Toggled="switch1_Toggled"/>
+        <Label Text="Сложная мастика с фигурами людей" HorizontalOptions="Center" Margin="40,-33,0,0" StyleId="labelmedium" />
+        <Switch x:Name="switch2" IsToggled="False" HorizontalOptions="Center" Margin="-320,20,0,0" OnColor="LightBlue" ThumbColor="#25d4e6" Toggled="switch1_Toggled"/>
+        <Label Text="Украшение с помощью крема" HorizontalOptions="Center" Margin="-20,-33,0,0" StyleId="labelmedium" />
+        <Switch x:Name="switch3" IsToggled="False" HorizontalOptions="Center" Margin="-320,20,0,0" OnColor="LightBlue" ThumbColor="#25d4e6" Toggled="switch1_Toggled"/>
+        <Label Text="Наличие надписи" HorizontalOptions="Center" Margin="-123,-33,0,0" StyleId="labelmedium" />
+
+        <Label x:Name="cost" Text="Стоимость: " StyleId="labelmedium" Margin="15,15,0,0"/>
+
+        <Button x:Name="next" Text="На главную" Margin="5,30,5,0" StyleId="button" Clicked="next_Clicked" />
+        <Button x:Name="back" Text="Назад" Margin="5,0,5,0" StyleId="button" Clicked="back_Clicked" />
+    </StackLayout>
+    
+</ContentPage>

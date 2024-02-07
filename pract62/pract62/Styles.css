@@ -1,0 +1,33 @@
+﻿#entry {
+    border-radius: 100;
+    color: darkolivegreen;
+}
+
+#button {
+    color: darkolivegreen;
+    font-size: small;
+}
+
+#picker {
+    color: darkolivegreen;
+}
+
+#labelsmall {
+    color: darkolivegreen;
+    font-size: small;
+}
+
+#labelmedium {
+    color: darkolivegreen;
+    font-size: medium;
+}
+
+#labelmedium1 {
+    color: darkolivegreen;
+    font-size: medium;
+}
+
+#labellarge {
+    color: darkolivegreen;
+    font-size: large;
+}

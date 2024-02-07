@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract62.Cakes">
+    
+    <ContentPage.Resources>
+        <StyleSheet Source="Styles.css"/>
+    </ContentPage.Resources>
+
+    <StackLayout >
+
+        <Label Text="{Binding Source={x:Reference Name=phonesList}, Path=SelectedItem.Name}" FontSize="Large"/>
+
+        <ListView x:Name="phonesList" HasUnevenRows="True" ItemsSource="{Binding Cake}" ItemTapped="OnItemTapped">
+
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <ImageCell ImageSource="{Binding ImagePath}" Text="{Binding Name}" Detail="{Binding Company, StringFormat='{0}'}" TextColor="Red" DetailColor="Blue"/>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+        <Label x:Name="runningtitle" TextColor="Olive" HorizontalOptions="Center"/>
+        <DatePicker x:Name="date" FontSize="Medium" FontAttributes="Bold" WidthRequest="100" TextColor="Olive" HorizontalOptions="Center" />
+
+        <StackLayout x:Name="button" Orientation="Vertical">
+
+            <Button Text="Информация по тортам" Margin="5,0,5,0" StyleId="button" Clicked="Button_Clicked"/>
+            <Button Text="Расчет стоимости торта" Margin="5,0,5,20" StyleId="button" Clicked="Button_Clicked_1"/>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
